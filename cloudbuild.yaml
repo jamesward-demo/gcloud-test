@@ -4,7 +4,6 @@ steps:
   args:
   - '-c'
   - |
+     gcloud auth list
      gcloud info
      echo $(pwd)
-     cat /builder/home/.config/gcloud/configurations/config_default
-     ls /builder/home/.config/gcloud/configurations
