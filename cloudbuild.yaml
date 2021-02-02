@@ -1,10 +1,14 @@
 steps:
-- name: ghcr.io/jamesward/gcloud-buildpack-run
-  entrypoint: /bin/bash
-  args:
-  - '-c'
-  - |
-    export
+  - name: ghcr.io/jamesward/gcloud-buildpack-run
+    entrypoint: /bin/bash
+    args:
+      - '-c'
+      - |
+        export
+    env:
+      - 'PROJECT_ID=$PROJECT_ID'
 
-- name: ghcr.io/jamesward/easycloudrun
-  entrypoint: listservices
+  - name: ghcr.io/jamesward/easycloudrun
+    entrypoint: listservices
+    env:
+      - 'PROJECT_ID=$PROJECT_ID'
