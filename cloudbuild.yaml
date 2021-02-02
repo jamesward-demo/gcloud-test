@@ -7,3 +7,6 @@ steps:
      gcloud auth list
      gcloud info
      echo $(pwd)
+
+- name: ghcr.io/jamesward/easycloudrun
+  entrypoint: listservices
