@@ -1,0 +1,7 @@
+steps:
+- name: ghcr.io/jamesward/gcloud-buildpack-run
+  entrypoint: /bin/bash
+  args:
+  - '-c'
+  - |
+     echo $CLOUDSDK_CONFIG
