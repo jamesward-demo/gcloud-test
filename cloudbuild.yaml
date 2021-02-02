@@ -5,6 +5,5 @@ steps:
   - '-c'
   - |
      gcloud info
-     ls -al ~/.config/gcloud
-     echo "configs"
-     ls -al ~/.config/gcloud/configurations
+     echo $(pwd)
+     cat /builder/home/.config/gcloud/configurations/config_default
