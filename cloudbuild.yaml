@@ -4,9 +4,7 @@ steps:
   args:
   - '-c'
   - |
-     gcloud auth list
-     gcloud info
-     echo $(pwd)
+    export
 
 - name: ghcr.io/jamesward/easycloudrun
   entrypoint: listservices
