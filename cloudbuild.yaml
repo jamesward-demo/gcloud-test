@@ -7,6 +7,4 @@ steps:
      gcloud info
      echo $(pwd)
      cat /builder/home/.config/gcloud/configurations/config_default
-     ls /builder/home/.config/gcloud
-     ls /workspace/.config
-     ls /workspace/.config/gcloud
+     ls /builder/home/.config/gcloud/configurations
