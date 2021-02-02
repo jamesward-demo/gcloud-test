@@ -4,4 +4,4 @@ steps:
   args:
   - '-c'
   - |
-     export
+     gcloud config list
