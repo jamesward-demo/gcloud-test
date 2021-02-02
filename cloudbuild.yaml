@@ -4,4 +4,4 @@ steps:
   args:
   - '-c'
   - |
-     echo $CLOUDSDK_CONFIG
+     export
