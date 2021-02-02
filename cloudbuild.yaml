@@ -4,4 +4,7 @@ steps:
   args:
   - '-c'
   - |
-     gcloud config list
+     gcloud info
+     ls -al ~/.config/gcloud
+     echo "configs"
+     ls -al ~/.config/gcloud/configurations
